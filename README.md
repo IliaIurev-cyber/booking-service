@@ -4,16 +4,6 @@
 REST API для системы бронирования отелей, построенное на базе микросервисной архитектуры Spring Cloud.
 В проекте реализованы: JWT-аутентификация, распределенная транзакция (паттерн Saga с компенсацией), автоматический подбор номеров на основе загруженности и API Gateway.
 
-## Технологический стек
-* **Java 17+**
-* **Spring Boot 3.5.x**
-* **Spring Cloud** (Eureka, Gateway, OpenFeign)
-* **Spring Security** + JWT
-* **Spring Data JPA** + H2 Database (in-memory)
-* **Swagger/OpenAPI** (документация)
-* **JUnit 5 + MockMvc** (тестирование)
-* **Lombok**
-
 ## Архитектура и компоненты
 Проект состоит из 4 независимых модулей:
 1. **eureka-server** (порт `8761`) — Service Discovery (реестр сервисов).
